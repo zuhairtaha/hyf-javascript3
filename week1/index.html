@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework Week 7</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://tahasoft.com/assets/img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" />
+
+</head>
+<body>
+
+<header class="jumbotron jumbotron-fluid bg-primary text-white pt-2 pb-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Homework Week 7</h1>
+                <p class="lead">Map, filter, reduce, and arrow functions</p>
+            </div>
+            <div class="col-sm-6">
+                <a target="_blank" class="btn btn-light float-right mt-4"
+                   href="https://github.com/HackYourFuture-CPH/JavaScript/blob/master/JavaScript3/Week7/MAKEME.md">
+                    Homework question
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container pb-5">
+
+    <p>
+        <span class="badge badge-light">step 1</span>
+        Rewriting the program using map, filter and arrow functions
+    </p>
+    <a href="js/step1-1.js">open code</a><br>
+    <span class="badge  badge-info">View results on console</span>
+    <hr>
+
+
+    <p>Using <a
+            href="https://gist.githubusercontent.com/pankaj28843/08f397fcea7c760a99206bcb0ae8d0a4/raw/02d8bc9ec9a73e463b13c44df77a87255def5ab9/movies.json">this
+        json file</a> as the source</p>
+    <ul>
+        <li>
+            Give each movie a tag: Good (>= 7), Average (>= 4 and < 7), Bad (< 4) based on the ratings.
+            <br>
+            <span class="badge  badge-info">View results on console</span>
+        </li>
+        <li class="mt-3">Calculate the average rating of all the movies.
+            <br>
+            <h1 id="avgForAllMovies"></h1>
+        </li>
+        <li>
+            Count the total number of Good, Average and Bad movies.
+            <div class="row">
+
+                <div class="col-lg-2">
+                    <div class="bg-success rounded text-white pt-2 pb-2 text-center">
+                        Good<br/>
+                        <h2 id="goodSpan">00</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="bg-info ptunded text-white pt-2 pb-2 text-center">
+                        Average<br/>
+                        <h2 id="averageSpan">00</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="bg-danger rounded text-white pt-2 pb-2 text-center">
+                        Bad<br/>
+                        <h2 id="badSpan">00</h2>
+                    </div>
+                </div>
+
+            </div>
+
+        </li>
+        <li class="mt-3">Count he number of movies containing the following keywords: ["The", "dog", "who", "is", "not", "a", "man"].
+            Can you make sure the search is case insensitive?
+
+            <table class="table col-sm-5 table-bordered table-sm table-hover">
+                <thead>
+                <tr>
+                    <th>keywork</th>
+                    <th>count</th>
+                </tr>
+                </thead>
+                <tbody id="keyWordsCountTbody">
+
+                </tbody>
+            </table>
+
+        </li>
+        <li>Count the number of movies made between 1980-1989 (including both the years).
+            <br>
+            <h1 id="oldMovies"></h1>
+        </li>
+    </ul>
+
+    <hr>
+    <p><span class="badge badge-light">Step 2</span>: Continuing with the previous exercise</p>
+    <a target="_blank" class="btn btn-primary" href="https://zuhairtaha.github.io/week6hw/">preview</a>
+    <a target="_blank" class="btn btn-primary" href="https://github.com/zuhairtaha/week6hw">code</a>
+    <a target="_blank" class="btn btn-primary" href="https://github.com/zuhairtaha/week6hw/blob/master/README.md">read me</a>
+
+
+</div>
+
+
+<footer>
+    <div id="footerCard" class="card text-white bg-dark rounded-0 mt-3">
+
+        <div class="card-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="card-title">Created by: Zuhair Taha</h5>
+                        <p class="card-text">
+                            <a target="_blank" href="https://github.com/zuhairtaha" class="btn ripple btn-light btn-circle"><i class="ti-github"></i></a>
+                            <a target="_blank" href="https://facebook.com/zuhairtaha" class="btn ripple btn-primary btn-circle"><i class="ti-facebook"></i></a>
+                            <a target="_blank" href="http://linkedin.com/zuhairtaha" class="btn ripple btn-success btn-circle"><i class="ti-linkedin"></i></a>
+                            <a target="_blank" href="#" class="btn ripple btn-info btn-circle"><i class="ti-twitter-alt"></i></a>
+                            <a target="_blank" href="#" class="btn ripple btn-warning btn-circle"><i class="ti-google"></i></a>
+                            <a target="_blank" href="http://youtube.com/zuhairtaha" class="btn ripple btn-danger btn-circle"><i class="ti-youtube"></i></a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 center">
+
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Homework</h4>
+                        <p>Class06 - JavaScript 3 - week 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-header">
+            <div class="container center">Aall right received 2018</div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/ajaxFunc.js"></script>
+<script src="js/step1-1.js"></script>
+<script src="js/step1-2.js"></script>
+
+</body>
+</html>
