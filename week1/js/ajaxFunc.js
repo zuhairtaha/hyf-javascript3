@@ -1,4 +1,5 @@
 "use strict";
+
 /**
  * Get Ajax Data from json link
  * @param url {string}
